@@ -1,10 +1,10 @@
-var Block = function(position) {
+var Block = function(game,position) {
 	//position是[0,0]格式
-	var img = imageFromPath("img/block.png")
+	var img = game.imageByName('block')
 	var p=position
 		//o 是Object代表一切对象
 	var o = {
-		image: img,
+		image: img.image,
 		x: p[0],
 		y: p[1],
 		w: 50,

@@ -1,8 +1,8 @@
-var Ball = function() {
-	var img = imageFromPath("img/ball.png")
+var Ball = function(game) {
+	var img = game.imageByName('ball')
 		//o 是Object代表一切对象
 	var o = {
-		image: img,
+		image: img.image,
 		x: 100,
 		y: 200,
 		speedX: 5,
